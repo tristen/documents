@@ -2,6 +2,10 @@
 
 ### Thoughts
 
+1. item
+2. item
+3. item
+
 Here are some thoughts. Ho hum.
 
 Before the thoughts, I'm going to post this message first. And some more here too. When a file updates, hideDiff() should execute. try it again
