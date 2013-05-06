@@ -2,7 +2,7 @@ How does it work?
 
 mat. Proina eros _adipiscing_ mollis hi. _Donec_ semper turpis sed diam. Sed consequat tortoem. vula gavida. Morbi ipsum, porta nec, tempor vitae liber
 
-Just made a deletion this is just a text now
+Just made a deletion this is just a text now..
 
 Pin at eros non eros # dpiscng mollis. Donec semper turpis sed dionsequat ligula nec tortor. _Integer_ eget sem. Ut vitae enim eu est vehicu gravida. Morbi ipsum ipsum, porta nec,	tempor id, auctor vitae luctus erat vitae libero. Integer nec enim.aliquam enim e tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wis nonummy sem neque in elit. e sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo
 
