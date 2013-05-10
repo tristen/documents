@@ -1,2 +1,3 @@
 prose:
-  rooturl: 'posts'
+  rooturl: 'posts',
+  relativeLinks: 'links.json'
