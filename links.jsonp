@@ -1,4 +1,4 @@
-links([
+callback({
 
 {
 	"title": "MapBox",
@@ -12,4 +12,4 @@ links([
 	"title": "MapBox Developer Documentation",
 	"href": "mapbox.com/developers"
 }
-])
+})
