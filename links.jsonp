@@ -1,14 +1,14 @@
 callback([
   {
-    "title": "Mapbox",
+    "text": "Mapbox",
     "href": "http://mapbox.com"
   },
   {
-    "title": "Mapbox Blog",
+    "text": "Mapbox Blog",
     "href": "http://mapbox.com/blog"
   },
   {
-    "title": "Mapbox Developer Documentation",
+    "text": "Mapbox Developer Documentation",
     "href": "http://mapbox.com/developers"
   }
 ])
