@@ -1,15 +1,14 @@
-callback({
-
-{
-	"title": "MapBox",
-	"href": "http://mapbox.com"
-},
-{
-	"title": "MapBox Blog,
-	"href": "mapbox.com/blog"
-},
-		{
-	"title": "MapBox Developer Documentation",
-	"href": "mapbox.com/developers"
-}
-})
+callback([
+  {
+    "title": "Mapbox",
+    "href": "http://mapbox.com"
+  },
+  {
+    "title": "Mapbox Blog",
+    "href": "http://mapbox.com/blog"
+  },
+  {
+    "title": "Mapbox Developer Documentation",
+    "href": "http://mapbox.com/developers"
+  }
+])
