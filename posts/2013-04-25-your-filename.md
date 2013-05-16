@@ -1,6 +1,9 @@
 # How does it work?
+![26885_395593264045_504789045_5207073_8217030_n.jpg](assets/26885_395593264045_504789045_5207073_8217030_n.jpg)
 
 mat. Proina eros **adipiscing** mollis hi. Donec semper turpis sed diam. Sed consequat tortoem. vula gavida. Morbi ipsum, porta nec, tempor vitae liber
+
+![Screen shot 2011-04-26 at 10.04.41 PM.png](assets/Screen shot 2011-04-26 at 10.04.41 PM.png)
 
 Pin at eros non eros dpiscng mollis. Donec semper turpis sed dionsequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicu gravida. Morbi ipsum ipsum, porta nec,	tempor id, auctor vitae luctus erat vitae libero. Integer nec enim.aliquam enim e tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wis nonummy sem neque in elit. e sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo
 
