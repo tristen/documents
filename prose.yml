@@ -1,4 +1,3 @@
 prose:
-  rooturl: 'posts'
   media: 'assets'
   relativeLinks: 'https://raw.github.com/tristen/documents/master/links.jsonp'
