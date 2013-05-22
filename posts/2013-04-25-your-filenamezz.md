@@ -1,24 +1,78 @@
-# How does it work?
+Prose allows you to include a `prose.yml` file to your project making it easy to configure a project managed in prose. If your project was built using [Jekyll](https://github.com/mojombo/jekyll) you can also add configurable options to `_config.yml`. To get started add the following line to either file:
 
-## Hi 
+	prose:
 
-### oh yah
+The following is a list of the currently supported configuration options. 
 
-![1018681590.jpg](assets/screenshots/nested/1018681590.jpg)
+| Setting | Config | Specific to Jekyll | Description |
+| ---- | ---- | ---- | ---- |
+| Root URL | `rooturl: "DIRECTORY"` | No | Restricts authoring access to a certain directory | 
+| Site URL | `siteurl: "http://domain-name.com/"` | No | Turns on Jekyll layout previews. Domain name of the live version of the site. `siteurl` is also used to derive a permalink in the settings sidebar if specified. | 
+| Site Object | `site:` | Yes | Attributes of the site object used for previews specified as URLS. At previe time, these urls will be requested to populate the site tags. Particularly useful for building site.tags and site.categories to fill out preview layouts. |
+| Metadata defaults | [See options below](#metadata) | Yes | Removes editing yml front matter to provide clean dropdown forms to select default options |
 
-*adipiscing*
-_adipiscing_
+### <a id='metadata'>Metadata Configuration</a>
 
-__adipiscing__
+#### Sample configuration for metadata
+```
+prose:
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout"
+          value: "default"
+      - name: "item"
+        field:
+          element: "select"
+          label: "Item"
+          placeholder: "Select an Item"
+          options:
+            - name: "Item 1"
+              value: "item1"
+            - name: "Item 2"
+              value: "item2"
+          selected: "item2"
+```
 
-mat. Proina eros **adipiscing** mollis hi. Donec semper turpis sed diam. Sed consequat tortoem. vula gavida. Morbi ipsum, porta nec, tempor vitae liber
+#### directory
+Define default metadata editor fields for a given directory, subdirectories will inherit these default fields.
 
-![Koryo Hotel in Pyongyang.jpg](assets/Koryo%20Hotel%20in%20Pyongyang.jpg)
+##### name
+String representing the YAML frontmatter key to be added.
 
-Pin at eros non eros dpiscng mollis. Donec semper turpis sed dionsequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicu gravida. Morbi ipsum ipsum, porta nec,	tempor id, auctor vitae luctus erat vitae libero. Integer nec enim.aliquam enim e tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wis nonummy sem neque in elit. e sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo
+##### field
+Form element for entering or selecting a YAML frontmatter value matching `name` key.
 
-Proin at eros non ero. And this change! Sed consequat. Integer eget sem. Ut vitae enim eu est vehicula gravida. ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices. Praesent ultricies facilisis nisl. Vivamus luctus elit sit amet mi. Phasellus pellentesque, erat eget elementum volutpat, dolor nisl porta neque, vitae sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo.
+##### element
 
-Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer whttp://localhost:8000/#isi, vel nonummy sem neque in elit. Curabitur ele wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices. Praesent ultricies facilisis nisl. Vivamus luctus elit sit amet mi. Phasellus pellentesque, erat eget elementum volutpat, dolor nisl porta neque, vitae sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo.
+| Metadata Editor Element | Value | HTML |
+| ---- | ---- | --- |
+| `button` | `boolean` |
+| `checkbox` | `boolean` | `<input type="checkbox" checked="checked" />` |
+| `text` | `string` | `<input type="text" name="name" value="value" />` |
+| `select` | `string` | `<select name="name">`<br />`<option value="item1">Item 1</option>`<br />`<option value="item2">Item 2</option>`<br />`</select>` |
+| `multiselect` | `[string, string]` | `<select name="name" multiple>`<br />`<option value="item1">Item 1</option>`<br />`<option value="item2">Item 2</option>`<br />`</select>` |
+  
+##### label
+`<label for="name">label</label>`
 
-Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi trisue senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices. Praesent ultricies facilisis nisl. Vivamus luctus elit sit amet mi. Phasellus pellentesque, erat eget elementum volutpat, dolor nisl porta neque, vitae sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo.
+##### placeholder
+Placeholder text for `select` dropdowns.
+
+##### options
+`<option value="value">name</option>` elements for `select` dropdowns.
+```
+- name: "Item 1"
+  value: "item1"
+- name: "Item 2"
+  value: "item2"
+```
+
+##### selected
+- pre-selected `value` from `options` for `select` dropdowns.
+
+##### value
+- `true`/`false` for `button` and `checkbox` form elements
+- default value for `text` fields
