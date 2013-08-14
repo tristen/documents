@@ -1,1 +1,1 @@
-[object Object]
+Better text here 
